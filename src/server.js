@@ -18,6 +18,6 @@ server.use((req, res, next) => {
 //   res.send("Hi, welcome to server's guitars");
 // });
 
-server.use("/apiguitars", routers);
+server.use(routers);
 
 module.exports = server;
