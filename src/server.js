@@ -23,4 +23,9 @@ server.use((req, res, next) => {
 
 server.use(routers);
 
+// cuando no existe una ruta
+server.use((req, res) => {
+  res.status(404).json({ error: 'Ruta no encontrada' });
+});
+
 module.exports = server;
