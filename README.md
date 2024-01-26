@@ -1,1 +1,1 @@
-# API_Guitars
+# Guitars API
