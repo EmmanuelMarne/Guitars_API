@@ -23,6 +23,14 @@ Guitars.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    color: {
+      type: DataTypes.STRING,
+      defaultValue: 'sin especificar',
+    },
+    nCuerdas: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
   },
   {
     sequelize: database,
